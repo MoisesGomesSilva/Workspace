@@ -19,6 +19,6 @@ vendas_por_dia = vendas_df.groupby("dia_semana")["quantidade"].sum()
 # Reordenar os resultados conforme a semana
 vendas_por_dia = vendas_por_dia.reindex(ordem_dias)
 
-# Exibir o resultado
+# Painel de resultados
 print("Distribuição total de vendas por dia da semana:")
 print(vendas_por_dia)

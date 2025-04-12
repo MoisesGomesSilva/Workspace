@@ -6,7 +6,7 @@ file_path = "estoque.csv"
 # Load values
 df = pd.read_csv(file_path)
 
-# Calculo estoque médio diário p/ produto (considerando todas as lojas)
+# Cálculo estoque médio diário p/ produto (considerando todas as lojas)
 media_estoque = df.groupby('id_produto')['quantidade_estoque'].mean()
 
 # Ordem e seleção dos 5 produtos com maior estoque médio
